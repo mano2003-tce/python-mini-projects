@@ -1,18 +1,18 @@
-
+# positive or negative 
 num = int(input('enter the number: '))
 if num>0:
     print('number is a positive')
 else:
     print('number is a negative')
 
-
+# odd or even 
 num = int(input('Enter the number: '))
 if num % 2 == 0:
     print('Number is an even!')
 else:
     print('Number is an odd!')
 
-
+# biggest of 3 numbers 
 num1 = int(input('Enter the number: '))
 num2 = int(input('Enter the number: '))
 num3 = int(input('Enter the number: '))
@@ -24,33 +24,33 @@ else:
      print('biggest number is:', num3)
 
 
-
+# div by 5 and 10
 num = int(input('enter the integer: '))
 if num % 5 ==0 and num % 10 == 0 :
     print('yes', num )
 else:
     print('no', num)
 
-
+# divisible by 5 or 10 
 num = int(input('enter the integer: '))
 if num % 5 ==0 or num % 10 == 0 :
     print('yes', num )
 else:
     print('no', num)
 
-
+#guess the number 
 num = int(input('enter the number= '))
 if num == 7:
      print('you gussed correct')
 else:
     print('try again!')
 
-
+# 5th table 
 for i in range(1,11):
     i = i * 5
     print(i)
 
-
+# 5th table using while loop
 num = int(input('enter the number of time u want to multiply: '))
 i = 0
 while i <= num :
@@ -58,7 +58,7 @@ while i <= num :
     print(a)
     i = i + 1
 
-
+# swap list
 def swaplist(newlist):
     size = len(newlist)   #the complete size of the list(this is the whole place)
 
@@ -72,7 +72,7 @@ print(swaplist(newlist))
 
 
 
-
+# swap list 
 def swaplist(newlist):
     size = len(newlist)
 
@@ -84,7 +84,7 @@ newlist = [1, 2, 3, 4]
 print(swaplist(newlist))
 
 
-
+# swap list (1, 2, 3)
 def swaplist(list, pos1, pos2):
     list[pos1], list[pos2] = list[pos2], list[pos1]
     return list
@@ -93,14 +93,14 @@ pos1 = 0
 pos2 = 2
 print(swaplist(list, pos1, pos2))
 
-
+# num of elements in list and the elements 
 list = [1, 3, 4, 5, 6]
 count = 0
 for i in list:
     count = count + 1
 print(count)
 
-
+# biggrst of 2 number 
 def max(a, b):
     if a > b:
         return a
@@ -110,19 +110,20 @@ a = int(input('enter the value= '))
 b = int(input('enter the value = '))
 print(max(a, b))
 
-
+# element exist in list or not 
 list = [1, 3, 2, 4]
 for i in list:
     if i == 4:
        print('element exist')
 
-
+# reverse a list
 def reverse(list):
     list.reverse()
     return list
 list = [1, 2, 4, 5]
 print(reverse(list))
 
+# clone the list
 def clone(list):
     list_copy = []
     list_copy.extend(list)
@@ -132,7 +133,7 @@ print(list)
 print('copy: ', clone(list))
 
 
-
+# sum of all elements in a list 
 def mylist(list):
     count = 0
     for i in list:
@@ -152,7 +153,7 @@ def mylist(list):
 list = [1, 2, 5, 3, 6, 7]
 print(mylist(list))
 
-
+#sorting a list
 def mylist(list):
     list.sort()
     return list
@@ -160,7 +161,7 @@ list = [2, 3, 5, 6, 7]
 print(list[0])
 
 
-
+# to make a list 
 list = []
 count = int(input('enter the number of terms in the list: '))
 for i in range (1, count + 1):
@@ -169,6 +170,7 @@ for i in range (1, count + 1):
 print(list)
 
 
+# to fill the list 
 def mylist(list):
     list = []
     count = int(input('enter the number fo terms in the list: '))
@@ -190,7 +192,7 @@ def mylist(list):
     return list
 print('the second maximum number is : ', mylist(list))
 
-
+# list of even numbers in a list 
 list = [1, 2, 3, 4, 5, 6]
 list2 = []
 for i in list:
@@ -198,6 +200,7 @@ for i in list:
         list2.append(i)
 print(list2)
 
+# list of odd numbers in a list 
 list = [1, 2, 3, 4, 5, 6]
 list2 = []
 for i in list:
@@ -205,7 +208,7 @@ for i in list:
         list2.append(i)
 print(list2)
 
-
+# to get the even list from the given value of numebrs
 start = int(input('enter the value to begin: '))
 end = int(input('enter the value to end: '))
 evenlist = []
@@ -225,7 +228,7 @@ def mylist(list):
     return list
 print(mylist(list))
 
-
+# adding all the even numbers in a list
 list = [1, 2, 3, 4, 5, 6]
 count = 0
 for i in list:
@@ -233,7 +236,7 @@ for i in list:
         count = count + 1
 print('even numbers: ', count)
 
-
+# to count the number of even and odd numbers in a list 
 list = [1, 2, 3, 4, 5, 6]
 even_count = 0
 odd_count = 0
@@ -245,7 +248,7 @@ for i in list:
 print('the even numbers count: ', even_count)
 print('the odd number count: ', odd_count)
 
-
+# to count the numebr of positive number and negative number in the list
 list = [-1, -2, -3, 1, 2, 3, 4]
 pos_count = 0
 neg_count = 0
@@ -258,7 +261,7 @@ print('positive count : ', pos_count)
 print('negative count : ', neg_count)
 
 
-
+# to reverse the words
 def rev(sent):
     word = sent.split(' ')
     rev = ' '.join(reversed(word))
@@ -267,7 +270,7 @@ def rev(sent):
 sent = 'iam mano'
 print(rev(sent))
 
-
+# to reverse the sentense in a list 
 def rev(sent):
     words = sent.split(' ')
     sent = ' '.join(reversed(words))
@@ -275,7 +278,7 @@ def rev(sent):
 sent = 'iam Mano'
 print(rev(sent))
 
-
+# to print a certain words from a sentece
 sent = 'iam Mano from Madurai'
 sent2 = ''
 for i in range(len(sent)):
