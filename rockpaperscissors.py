@@ -26,7 +26,7 @@ if gamers == "pc":
             else:
                 print('you lose')
                 print("----------------")
-            cp += 1
+                cp += 1
             n += 1
     print("RESULTS")
     print('your point: ', myp)
